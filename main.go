@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/appleboy/gin-jwt"
-	"github.com/gin-gonic/gin"
+	"github.com/appleboy/gin-jwt" 
+    "github.com/gin-gonic/gin" 
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/postgres"
 	"log"
@@ -35,7 +35,7 @@ func main() {
 	/*
 	 * The JWT middleware authentication
 	 */
-	authMiddleware, err := jwt.New(&jwt.GinJWTMiddleware{
+	authMiddleware, err := &jwt.New(&jwt.GinJWTMiddleware{
 		Realm:       "apitodogo", // https://tools.ietf.org/html/rfc7235#section-2.2
 		Key:         []byte(key),
 		Timeout:     time.Hour,
