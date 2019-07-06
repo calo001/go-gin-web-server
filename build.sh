@@ -6,5 +6,6 @@
 #go get -u github.com/appleboy/gin-jwt/v2
 #go get -u github.com/lib/pq
 #go get -u github.com/lib/pq/hstore
-go get -u github.com/dgrijalva/jwt-go
-go build -o ./app main.go
+#go get -u github.com/dgrijalva/jwt-go
+#go build -o ./app main.go
+./app
