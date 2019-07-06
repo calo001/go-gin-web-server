@@ -2,7 +2,7 @@ package main
 
 import (
 	"github.com/appleboy/gin-jwt"
-	jwt2 "github.com/dgrijalva/jwt-go"
+	"github.com/dgrijalva/jwt-go"
 	"github.com/gin-gonic/gin"
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/postgres"
